@@ -26,3 +26,37 @@
 *	ارائه 
 *	مهلت: 1 خرداد 1404
 
+# 📊 Schema
+The dataset includes comprehensive property information organized in the following categories:
+
+### 🏷️ Categorization
+cat2_slug, cat3_slug: Property categorization slugs
+property_type: Type of property (apartment, villa, land, etc.)
+### 📍 Location
+city_slug, neighborhood_slug: Location identifiers
+location_latitude, location_longitude: Geographic coordinates
+location_radius: Location accuracy radius
+### 📝 Listing Details
+created_at_month: Timestamp of when the ad was created
+user_type: Type of user who posted the listing (individual, agency, etc.)
+description, title: Textual information about the property
+### 💰 Financial Information
+Rent-related: rent_mode, rent_value, rent_to_single, rent_type
+Price-related: price_mode, price_value
+Credit-related: credit_mode, credit_value
+Transformed values: Various transformed financial metrics for analysis
+### 🏢 Property Specifications
+land_size, building_size: Property dimensions (in square meters)
+deed_type, has_business_deed: Legal property information
+floor, rooms_count, total_floors_count, unit_per_floor: Building structure details
+construction_year, is_rebuilt: Age and renovation status
+### 🛋️ Amenities and Features
+Utilities: has_water, has_electricity, has_gas
+Climate control: has_heating_system, has_cooling_system
+Facilities: has_balcony, has_elevator, has_warehouse, has_parking
+Luxury features: has_pool, has_jacuzzi, has_sauna
+Other features: has_security_guard, has_barbecue, building_direction, floor_material
+### 🏨 Short-term Rental Information
+regular_person_capacity, extra_person_capacity
+cost_per_extra_person
+Pricing variations: rent_price_on_regular_days, rent_price_on_special_days, rent_price_at_weekends
